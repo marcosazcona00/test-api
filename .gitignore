@@ -1,0 +1,8 @@
+/node_modules/
+newrelic_agent.log
+/output/*.out
+.DS_Store
+/logs/*.err.log
+
+# dotenv environment variables file
+.env
