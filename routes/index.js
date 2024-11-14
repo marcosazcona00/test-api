@@ -10,5 +10,9 @@ router.get('/ping', function(req, res, next) {
   res.send('pong');
 });
 
+router.get('/ping/pepe', function(req, res, next) {
+  res.send('pong pepe');
+});
+
 module.exports = router;
 
