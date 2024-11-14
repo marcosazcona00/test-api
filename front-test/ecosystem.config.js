@@ -1,11 +1,10 @@
-module.exports = {
+export default {
   apps : [{
     name   : "app2",
-    name   : "app2",
     script : "nuxt",
-    args   : "start", // Usa "start" en lugar de "dev" para producción
+    args   : "start",
     env: {
       PORT: 3000 // Cambia este número al puerto que prefieras
     }
   }]
-}
+};
