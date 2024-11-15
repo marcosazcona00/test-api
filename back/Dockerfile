@@ -4,12 +4,11 @@ WORKDIR /docker
 COPY . .
 
 RUN rm package-lock.json
-RUN rm -r node_modules
+RUN rm -rf node_modules
 
 RUN npm i
 RUN npm i pm2 -g
 
 EXPOSE 3001
-CMD pm2 start ecosystem.config.js
-
+CMD npm run start
 
