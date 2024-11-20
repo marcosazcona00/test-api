@@ -1,8 +1,8 @@
 FROM node:20.12.2
 
-WORKDIR /docker
+WORKDIR /backend
 
-ENV PORT=3003
+ENV PORT=3001
 
 COPY . .
 
@@ -10,7 +10,7 @@ RUN rm package-lock.json
 RUN rm -rf node_modules
 RUN npm i
 
-EXPOSE 3003
+EXPOSE $PORT
 
 CMD npm run start
 
