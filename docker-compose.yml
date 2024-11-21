@@ -1,0 +1,19 @@
+version: "2.1"
+services:
+  back:
+    image: back-image
+    container_name: back-container
+    ports:
+      - 3001:3001
+    build: 
+      context: ./back
+      dockerfile: Dockerfile
+  front-test:
+    image: front-image
+    container_name: front-container
+    ports:
+      - 3000:3000
+    build: 
+      context: ./front-test
+      dockerfile: Dockerfile
+    
